@@ -1,0 +1,37 @@
+.App {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 7%, rgba(28,25,25,1) 35%, rgba(21,21,28,1) 52%, rgba(0,0,0,1) 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.bg_circles {
+  z-index: 1;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  transform: translate(-50%);
+  overflow: hidden;
+  opacity: 0.2;
+  width: 140vw;
+
+  svg {
+    animation: circles 45s ease-in-out backwards infinite;
+  }
+}
+
+
+@keyframes circles {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+

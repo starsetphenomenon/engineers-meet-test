@@ -1,0 +1,178 @@
+.hero {
+    z-index: 1;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 675px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 90px;
+
+    .container {
+        z-index: 10;
+        width: 100% !important;
+    }
+
+    &-wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        box-shadow: 32px 32px 150px 62px #000;
+    }
+
+    &-code {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        opacity: 0.3;
+    }
+
+    &-img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+
+
+    &__info {
+        margin-top: 160px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        h1 {
+            font-family: 'Mazzard';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 96.3878px;
+            line-height: 90px;
+            color: #FFFFFF;
+            text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+            margin: 10px;
+        }
+
+        h3 {
+            display: none;
+            font-family: 'Mazzard';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #AAAAAA;
+        }
+
+        p {
+            font-family: 'Mazzard';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25.7034px;
+            line-height: 30px;
+            width: 50%;
+            margin-bottom: 90px;
+            color: #E9E9E9;
+        }
+
+        .traders {
+            background: linear-gradient(89.95deg, #487FFF -1.65%, #73B5FF 51.06%, #CB76FF 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__btn {
+        width: 100%;
+
+        button {
+            width: 220px;
+            height: 68px;
+            background: linear-gradient(140.6deg, #3E6FF9 -27.18%, #3E53F8 126.06%);
+            box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Mazzard';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin: 0 auto;
+            cursor: pointer;
+
+            .arr-down {
+                padding: 7.5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hero {
+        &-code {
+            position: absolute;
+            top: 85%;
+            right: 0;
+            opacity: 0.3;
+        }
+
+        &-img {
+            position: absolute;
+            bottom: -200%;
+            right: -70%;
+            transform: scale(0.7);
+        }
+
+        &__info {
+            margin-top: 50px;
+            align-items: center;
+
+            h1 {
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 61px;
+                text-align: center;
+            }
+
+            p {
+                width: 100%;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 140%;
+                text-align: center;
+            }
+
+            h3 {
+                display: inline;
+            }        
+        }
+        button {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+}
